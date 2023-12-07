@@ -43,16 +43,29 @@ img#logo {
     margin-right: 70%;
 }
 
-.btn {
-    padding: 7px 12px;
-    border: none;
-    border-radius: 40px;
+.login {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid skyblue;
+    display: flex;
 }
 
-.btnbcr {
-    background: linear-gradient(#0CC0DF, #E6C955);
-    cursor: pointer;
-    font-size: 10px;
+button {
+    height: 35px;
+    margin: 5px 0px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+}
+
+button:hover {
+    background-color: #333;
+    color: skyblue;
 }
 
 .container {
