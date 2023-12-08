@@ -9,9 +9,6 @@
 }
 
 header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     padding: 1px 1%;
     background-color: #5DE0E6;
 }
@@ -398,7 +395,7 @@ img#captlogo {
 .btnlg {
     padding: 18px 100px;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .btnletsgo {
