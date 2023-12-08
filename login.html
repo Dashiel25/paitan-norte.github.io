@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Home</title>
+
+    <style>
+        .hd {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+        }
+        
+        .gradientText {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 100px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 300% 300%;
+            animation: gradient 8s ease-in-out infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .bd {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            margin: 100px auto;
+            width: 75%;
+        }
+
+        .imgloc {
+            max-width: 350px;
+            float: left;
+            border-radius: 10px;
+            border: 3px solid white;
+            margin-right: 30px;
+        }
+        
+        .text h2 {
+            font-size: 30px;
+            padding: 5px;
+            color: blue;
+        }
+
+        .text p {
+            font-size: 15px;
+        }
+
+        .bdy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        div img {
+            width: 200px;
+            height: 150px;
+            border: 2px solid #ff3d0036;
+            border-radius: 13px;
+            box-shadow: 2px 5px 5px 0px #00000042;
+            cursor: pointer;
+            margin: 5px;
+            transition: 400ms;
+        }
+        div img:hover {
+            filter: grayscale(1);
+            transform: scale(1.03);
+        }
+
+        .hc {
+            background: rgb(113, 241, 209);
+        }
+        
+        .kp {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+        }
+        
+        .kap {
+            margin: 100px auto;
+            width: 75%;
+        }
+
+        .imgkp {
+            width: 100%;
+            height: 100%;
+            max-width: 350px;
+            float: left;
+            border-radius: 10px;
+            border: 3px solid white;
+            margin-right: 20px;
+        }
+
+        .kaptext h1 {
+            margin-top: 5%;
+            font-size: 40px;
+            padding: 5px;
+            color: rgb(78, 5, 35);
+            margin-left: 10px;
+        }
+
+        .kaptext p {
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .kaptext h5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .elem {
+            background-color: rgb(238, 188, 203);
+        }
+
+        .el {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .els {
+            margin: 100px auto;
+            width: 75%;
+        }
+
+        .esloc {
+            max-width: 350px;
+            float: left;
+            border-radius: 10px;
+            border: 3px solid white;
+            margin-right: 30px;
+        }
+        
+        .estext h2 {
+            font-size: 30px;
+            padding: 5px;
+            color: blue;
+        }
+
+        .estext p {
+            font-size: 15px;
+        }
+
+        .imges {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        div img {
+            width: 200px;
+            height: 150px;
+            border: 2px solid #ff3d0036;
+            border-radius: 13px;
+            box-shadow: 2px 5px 5px 0px #00000042;
+            cursor: pointer;
+            margin: 5px;
+            transition: 400ms;
+        }
+        
+        div img:hover {
+            filter: grayscale(1);
+            transform: scale(1.03);
+        }
+
+        .div1 {
+            background-color: goldenrod;
+            width: 50%;
+            float: left;
+        }
+
+        .div2 {
+            background-color: lightcoral;
+            width: 50%;
+            float: right;
+        }
+
+        .off h1 {
+            text-align: center;
+        }
+
+        .off h5 {
+            width: 100%;
+            float: left;
+            margin: 10px;
+            font-size: 20px;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <div class="hd">
+        <p class="gradientText">Paitan Norte</p>
+    </div>
+    <div class="kapsec">
+        <div class="kp">
+            <div class="kap">
+                <img src="img/capt.jpg" alt="" class="imgkp">
+                <div class="kaptext">
+                    <h1>"A true leader does not create separation, A true leader brings people together."</h1>
+                    <p> -- Gilbert B. Nono</p>
+                    <h5>BARANGAY CAPTAIN</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hc">
+        <div class="bd">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7676.661644994624!2d120.72487508853436!3d15.839200610748035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391253ec8900dbb%3A0x5f119dc9ed46e5f0!2sPaitan%20Lake!5e0!3m2!1sen!2sph!4v1702011714970!5m2!1sen!2sph"
+                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" class="imgloc"></iframe>
+                <div class="text">
+                    <h2>Paitan Lake - Libsong Lake</h2>
+                    <p>Paitan or Libsong Lake is located between three (3)  neighboring northern barangays of 
+                        Cuyapo namely,  Paitan Norte, Paitan Sur, and Nagcuralan. It is the only natural 
+                        in-land body of water in entire Nueva Ecija streching as wide as 85 hectares where 
+                        migratory birds make their home during September to February of each year.
+                    </p>
+                    <p>Situated in the land-locked province of Nueva Ecija, this lake is the only natural inland body of water in the province. It is located in the heart of Cuyapo and the middle of the plains of this little town. This trail starts at Paitan Sur Elementary School and ends 
+                        near Paitan Norte Elementary School. It goes around the lake and traverses the Central Luzon Border.  </p>
+                </div>
+            </div>
+        </div>
+        <div class="bdy">
+            <img src="img/g1.jpg" alt="">
+            <img src="img/g2.jpg" alt="">
+            <img src="img/g3.jpg" alt="">
+            <img src="img/g4.jpg" alt="">
+            <img src="img/g5.jpg" alt="">
+            <img src="img/g6.jpg" alt="">
+        </div>
+    </div>
+    <div class="elem">
+        <div class="el">
+            <div class="els">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.458596893505!2d120.73896857430692!3d15.832476445734086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33912507bdfe3947%3A0xc002aeaa899038e5!2sPaitan%20Norte%20Elementary%20School!5e0!3m2!1sen!2sph!4v1702035189115!5m2!1sen!2sph"
+                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                 referrerpolicy="no-referrer-when-downgrade" class="esloc"></iframe>
+                 <div class="estext">
+                    <h2>Paitan Norte Elementary School</h2>
+                    <p>Paitan Norte Elementary School is one of the top rated place listed as Public School in Cuyapo , 
+                        Elementary School in Cuyapo</p>
+                 </div>
+            </div>
+        </div>
+        <div class="imges">
+            <img src="img/p1.jpg" alt="">
+            <img src="img/p2.jpg" alt="">
+            <img src="img/p3.jpg" alt="">
+            <img src="img/p4.jpg" alt="">
+            <img src="img/p5.jpg" alt="">
+            <img src="img/p6.jpg" alt="">
+        </div>
+    </div>
+    <div class="off">
+        <div class="div1">
+            <h1>Barangay Officials</h1>
+            <h5>Barangay Captain: GILBERT B. NONO</h5>
+            <h5>Barangay Kagawad:</h5>
+            <ul>
+                <li>Randy Antolin</li>
+                <li>Rolando C. Rosario Sr.</li>
+                <li>Wilfredo Rosina</li>
+                <li>Ferdinand Aquino</li>
+                <li>Joel Marquez</li>
+                <li>Alexander Aquino</li>
+                <li>Perla Tabaday</li>
+            </ul>
+        </div>
+        <div class="div2">
+            <h1>Sangguniang Kabataan</h1>
+            <h5>SK Chairman: RANDY MANLANSING</h5>
+            <h5>SK Member:</h5>
+            <ul>
+                <li>Gian Mendoza</li>
+                <li>Rhoanne Rosina</li>
+                <li>Patricia Zaragosa</li>
+                <li>Jhon Lawrence Marquez</li>
+                <li>Dashiel Dela Cruz</li>
+                <li>Joey Marielle Rosina</li>
+                <li>Abegail Rosina</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -43,6 +43,7 @@ img#logo {
     margin-right: 70%;
 }
 
+
 .login {
     margin: 0;
     padding: 0;
@@ -52,9 +53,10 @@ img#logo {
     padding: 15px;
     border: 1px solid skyblue;
     display: flex;
+    text-align: center;
 }
 
-button {
+a {
     height: 35px;
     margin: 5px 0px;
     background-color: skyblue;
@@ -63,7 +65,7 @@ button {
     color: #333;
 }
 
-button:hover {
+a:hover {
     background-color: #333;
     color: skyblue;
 }
