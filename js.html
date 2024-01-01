@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Judicial System</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#caseList {
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Barangay Judicial System</h2>
+        <form id="legalCaseForm">
+            <label for="caseTitle">Case Title:</label>
+            <input type="text" id="caseTitle" name="caseTitle" required>
+
+            <label for="caseDescription">Case Description:</label>
+            <textarea id="caseDescription" name="caseDescription" required></textarea>
+
+            <label for="plaintiff">Plaintiff:</label>
+            <input type="text" id="plaintiff" name="plaintiff" required>
+
+            <label for="defendant">Defendant:</label>
+            <input type="text" id="defendant" name="defendant" required>
+
+            <button type="button" onclick="submitLegalCase()">Submit Case</button>
+        </form>
+
+        <div id="caseList"></div>
+    </div>
+
+    <script>
+        var legalCases = [];
+
+function submitLegalCase() {
+    var caseTitle = document.getElementById("caseTitle").value;
+    var caseDescription = document.getElementById("caseDescription").value;
+    var plaintiff = document.getElementById("plaintiff").value;
+    var defendant = document.getElementById("defendant").value;
+
+    // You can perform additional validation here if needed
+
+    var legalCase = {
+        title: caseTitle,
+        description: caseDescription,
+        plaintiff: plaintiff,
+        defendant: defendant
+    };
+
+    legalCases.push(legalCase);
+
+    // Clear the form fields
+    document.getElementById("caseTitle").value = "";
+    document.getElementById("caseDescription").value = "";
+    document.getElementById("plaintiff").value = "";
+    document.getElementById("defendant").value = "";
+
+    displayLegalCases();
+}
+
+function displayLegalCases() {
+    var caseListContainer = document.getElementById("caseList");
+    caseListContainer.innerHTML = "<h3>Legal Cases</h3>";
+
+    if (legalCases.length === 0) {
+        caseListContainer.innerHTML += "<p>No cases available.</p>";
+        return;
+    }
+
+    for (var i = 0; i < legalCases.length; i++) {
+        var caseDetails = legalCases[i];
+        caseListContainer.innerHTML += `
+            <div class="case-details">
+                <h4>${caseDetails.title}</h4>
+                <p><strong>Description:</strong> ${caseDetails.description}</p>
+                <p><strong>Plaintiff:</strong> ${caseDetails.plaintiff}</p>
+                <p><strong>Defendant:</strong> ${caseDetails.defendant}</p>
+            </div>
+        `;
+    }
+}
+
+    </script>
+</body>
+</html>

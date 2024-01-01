@@ -1,2 +1,0 @@
-# paitan-norte.github.io
- 

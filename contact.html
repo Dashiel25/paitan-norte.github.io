@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+
+    <style>
+        .hd {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.gradientText {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 8s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    </style>
 </head>
 <body>
+    <div class="hd">
+        <p class="gradientText">Paitan Norte</p>
+    </div>
     <h1>Facebook Pages</h1>
     <ul>
         <li><a href="https://www.facebook.com/profile.php?id=61553216095875">Sangguniang Kabataan ng Paitan Norte</a></li>

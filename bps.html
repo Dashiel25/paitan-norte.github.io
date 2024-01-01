@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Profile System</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#barangayInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+span {
+    margin-bottom: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Barangay Profile</h2>
+        <div id="barangayInfo"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Static data for demonstration
+    var barangayData = {
+        name: "Paitan Norte",
+        captain: "Gilbert B. Nono",
+        population: 1886,
+        location: "Nueva Ecija",
+        foundationYear: 2000
+    };
+
+    displayBarangayInfo(barangayData);
+});
+
+function displayBarangayInfo(data) {
+    var barangayInfoContainer = document.getElementById("barangayInfo");
+
+    var nameLabel = document.createElement("label");
+    nameLabel.innerText = "Barangay Name:";
+    var nameSpan = document.createElement("span");
+    nameSpan.innerText = data.name;
+
+    var captainLabel = document.createElement("label");
+    captainLabel.innerText = "Barangay Captain:";
+    var captainSpan = document.createElement("span");
+    captainSpan.innerText = data.captain;
+
+    var populationLabel = document.createElement("label");
+    populationLabel.innerText = "Population:";
+    var populationSpan = document.createElement("span");
+    populationSpan.innerText = data.population;
+
+    var locationLabel = document.createElement("label");
+    locationLabel.innerText = "Location:";
+    var locationSpan = document.createElement("span");
+    locationSpan.innerText = data.location;
+
+    var foundationYearLabel = document.createElement("label");
+    foundationYearLabel.innerText = "Foundation Year:";
+    var foundationYearSpan = document.createElement("span");
+    foundationYearSpan.innerText = data.foundationYear;
+
+    barangayInfoContainer.appendChild(nameLabel);
+    barangayInfoContainer.appendChild(nameSpan);
+    barangayInfoContainer.appendChild(captainLabel);
+    barangayInfoContainer.appendChild(captainSpan);
+    barangayInfoContainer.appendChild(populationLabel);
+    barangayInfoContainer.appendChild(populationSpan);
+    barangayInfoContainer.appendChild(locationLabel);
+    barangayInfoContainer.appendChild(locationSpan);
+    barangayInfoContainer.appendChild(foundationYearLabel);
+    barangayInfoContainer.appendChild(foundationYearSpan);
+}
+
+    </script>
+</body>
+</html>

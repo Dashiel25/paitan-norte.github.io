@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Indigency Request</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#requestStatus {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Barangay Indigency Request</h2>
+        <form id="indigencyRequestForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="birthDate">Birth Date:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="proofOfIndigency">Proof of Indigency:</label>
+            <input type="file" id="proofOfIndigency" name="proofOfIndigency" accept=".pdf, .doc, .docx" required>
+
+            <button type="button" onclick="submitRequest()">Submit Request</button>
+        </form>
+
+        <div id="requestStatus"></div>
+    </div>
+
+    <script>
+        function submitRequest() {
+    var fullName = document.getElementById("fullName").value;
+    var address = document.getElementById("address").value;
+    var birthDate = document.getElementById("birthDate").value;
+    var proofOfIndigency = document.getElementById("proofOfIndigency").value;
+
+    // You can perform additional validation here if needed
+
+    // For demonstration purposes, just display the entered information as a status message
+    var requestStatus = `
+        <h3>Indigency Request Status</h3>
+        <p><strong>Full Name:</strong> ${fullName}</p>
+        <p><strong>Address:</strong> ${address}</p>
+        <p><strong>Birth Date:</strong> ${birthDate}</p>
+        <p><strong>Proof of Indigency:</strong> ${proofOfIndigency}</p>
+        <p>Your request has been submitted. Please wait for approval.</p>
+    `;
+
+    document.getElementById("requestStatus").innerHTML = requestStatus;
+}
+
+    </script>
+</body>
+</html>

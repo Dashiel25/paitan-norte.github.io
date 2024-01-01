@@ -26,30 +26,69 @@
             filter: grayscale(1);
             transform: scale(1.03);
         }
+
+        .hd {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.gradientText {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 8s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
     </style>
 </head>
 <body>
-    <div>
-        <img src="img/3.jpg" alt="">
-        <img src="img/4.jpg" alt="">
-        <img src="img/5.jpg" alt="">
-        <img src="img/6.jpg" alt="">
-        <img src="img/7.jpg" alt="">
-        <img src="img/8.jpg" alt="">
-        <img src="img/9.jpg" alt="">
-        <img src="img/10.jpg" alt="">
-        <img src="img/11.jpg" alt="">
-        <img src="img/12.jpg" alt="">
-        <img src="img/13.jpg" alt="">
-        <img src="img/img3.jpg" alt="">
-        <img src="img/21.jpg" alt="">
-        <img src="img/22.jpg" alt="">
-        <img src="img/23.jpg" alt="">
-        <img src="img/24.jpg" alt="">
-        <img src="img/25.jpg" alt="">
-        <img src="img/26.jpg" alt="">
+    <div class="hd">
+        <p class="gradientText">Paitan Norte</p>
     </div>
-    <br />
+    <div>
+        <div>
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+            <img src="img/6.jpg" alt="">
+            <img src="img/7.jpg" alt="">
+            <img src="img/8.jpg" alt="">
+            <img src="img/9.jpg" alt="">
+            <img src="img/10.jpg" alt="">
+            <img src="img/11.jpg" alt="">
+            <img src="img/12.jpg" alt="">
+            <img src="img/13.jpg" alt="">
+            <img src="img/img3.jpg" alt="">
+            <img src="img/21.jpg" alt="">
+            <img src="img/22.jpg" alt="">
+            <img src="img/23.jpg" alt="">
+            <img src="img/24.jpg" alt="">
+            <img src="img/25.jpg" alt="">
+            <img src="img/26.jpg" alt="">
+        </div>
+    </div>
     <a href="index.html">Back</a>
+    
 </body>
 </html>

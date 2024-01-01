@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+
+    <style>
+        
+.hd {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.gradientText {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 8s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    </style>
 </head>
 <body>
-    <h1 style="font-family: 'Franklin Gothic Medium'; text-align: center;">Paitan Norte, Cuyapo, Nueva Ecija</h1>
+    <div class="hd">
+        <p class="gradientText">Paitan Norte</p>
+    </div>
     <h2 style="text-align: left; font-size: medium; font-family: Arial, Helvetica, sans-serif;">Location</h2>
     <p style="font-size: medium; text-align: start;">Paitan Norte is situated at approximately 15.8314, 120.7417, in the island of Luzon. Elevation at these coordinates is estimated at 84.7 meters or 277.9 feet above mean sea level.</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30706.95397414608!2d120.7260943619835!3d15.83717881473476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391250df68c030d%3A0xf2b94ef4bf97987c!2sPaitan%20Norte%2C%20Cuyapo%2C%20Nueva%20Ecija!5e0!3m2!1sen!2sph!4v1701945758451!5m2!1sen!2sph" text-align="center" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
