@@ -531,3 +531,18 @@ img#captlogo {
     margin-right: 3%;
     color: white;
 }
+
+.btn2m {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+.btnlogin {
+    background: rgb(87, 121, 172);
+    cursor: pointer;
+    font-size: 20px;
+    color: black; 
+    margin-bottom: 1%;
+}
