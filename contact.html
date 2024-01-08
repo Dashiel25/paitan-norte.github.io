@@ -6,55 +6,285 @@
     <title>Contact</title>
 
     <style>
-        .hd {
+         * {
     margin: 0;
     padding: 0;
-    background: #000;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+   }
+
+   .time {
+        padding: 1px;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: #6ca4f8;
+        color: white;
+    }
+    
+    .container {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+    }
+    
+    nav ul a {
+        color: black;
+        margin: 1rem
+    }
+    
+    .btn2m {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .btnlogin {
+        background: rgb(248, 208, 27);
+        cursor: pointer;
+        font-size: 15px;
+        color: black;  
+    }
+
+    .aboutus p {
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+.aboutus img {
+    float: left;
+    width: 15%;
+    height: 15%;
+    margin-left: 12%;
+    margin-top: 2%;
+    margin-right: 7%;
+    margin-bottom: 2%;
+}
+
+
+.aboutuslist {
+    font-size: 15px;
+    font-family: "Arial";
+    margin-top: 7%;
+}
+
+.credits {
+    background-color: #000000;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.credittext {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 30vh;
+    align-items: center;
 }
 
-.gradientText {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 100px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    background: linear-gradient(135deg,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300% 300%;
-    animation: gradient 8s ease-in-out infinite;
+.credittext p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 3%;
+    color: white;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.contact {
+    background-color: whitesmoke;
 }
+
+.container5 {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box {
+    background-color: #fff;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+
+.contact-right {
+    flex-basis: 60%;
+    padding: 40px;
+    background-color: #1c00b5;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.container5 p {
+    margin-bottom: 10px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+
+button {
+    background-color: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3 {
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 20px;
+}
+
     </style>
 </head>
 <body>
-    <div class="hd">
-        <p class="gradientText">Paitan Norte</p>
+    <div class="time">
+        <p>Open Hours of Barangay Paitan Norte    <b>Mon - Fri: 8.00am - 7.00pm</b></p>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learnmore.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="login.html" class="btn2m btnlogin">Login</a>
+            </ul>
+        </nav>
     </div>
-    <h1>Facebook Pages</h1>
-    <ul>
-        <li><a href="https://www.facebook.com/profile.php?id=61553216095875">Sangguniang Kabataan ng Paitan Norte</a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100083347784209">Paitan Norte Elementary School</a></li>
-    </ul>
-    <h1>Barangay Captain</h1>
-    <ul>
-        <li><a href="https://www.facebook.com/gilbert.non.92">Gilbert Baruela Nono</a></li>
-    </ul>
-    <br />
-    <a href="index.html">Back</a>
+
+    <div class="contact">
+        <div class="container5">
+            <h1>Connect with us</h1>
+            <p>We would love to respond to your quiries and help you succeed.<br> Feel free to get in touch with us.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Sent your request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Juan Dela Cruz">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="01234567890">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="juandelacruz@gmail.com">
+                            </div>
+                        </div>
+                        
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>contactus@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+63 995 732 1856</td>
+                        </tr><tr>
+                            <td>Address</td>
+                            <td>Barangay Paitan Norte, Cuyapo, Nueva Ecija</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="aboutus">
+        <p>About Us</p>
+        <img src="img/PAITANlogo.png" alt="">
+        <div class="aboutuslist">
+            <ul>
+                <li>Paitan Norte is one of the Barangays of Cuyapo</li>
+                <li>Cuyapo is in the Province of Nueva Ecija</li>
+                <li>The Province of Nueva Ecija is in Region III - Ilocos Region and in the central island of Luzon</li>
+            </ul>
+        </div>
+    </div>
+    <div class="credits">
+        <div class="credittext">
+            <p>Paitan Norte, Cuyapo, Nueva Ecija</p>         
+            <p>All Rights Reserved</p>
+        </div>
+    </div>
 </body>
 </html>

@@ -5,52 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
     <style>
-        .hd {
+   * {
     margin: 0;
     padding: 0;
-    background: #000;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+   }
+
+   .time {
+        padding: 1px;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: #6ca4f8;
+        color: white;
+    }
+    
+    .container {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+    }
+    
+    nav ul a {
+        color: black;
+        margin: 1rem
+    }
+    
+    .btn2m {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .btnlogin {
+        background: rgb(248, 208, 27);
+        cursor: pointer;
+        font-size: 15px;
+        color: black;  
+    }
+
+    .aboutus p {
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+.aboutus img {
+    float: left;
+    width: 15%;
+    height: 15%;
+    margin-left: 12%;
+    margin-top: 2%;
+    margin-right: 7%;
+    margin-bottom: 2%;
+}
+
+
+.aboutuslist {
+    font-size: 15px;
+    font-family: "Arial";
+    margin-top: 7%;
+}
+
+.credits {
+    background-color: #000000;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.credittext {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 30vh;
+    align-items: center;
 }
 
-.gradientText {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 100px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    background: linear-gradient(135deg,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300% 300%;
-    animation: gradient 8s ease-in-out infinite;
+.credittext p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 3%;
+    color: white;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.news {
+    background-color: #f0f0f0;
 }
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card {
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+
+.new {
+    background-color: grey;
+}
+
+
+
     </style>
 </head>
 <body>
-    <div class="hd">
-        <p class="gradientText">Paitan Norte</p>
+    <div class="time">
+        <p>Open Hours of Barangay Paitan Norte    <b>Mon - Fri: 8.00am - 7.00pm</b></p>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learnmore.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="login.html" class="btn2m btnlogin">Login</a>
+            </ul>
+        </nav>
     </div>
-    <h1>Latest News from Nueva Ecija</h1>
-    <ul>
-        <li><a href="https://ground.news/article/rider-patay-matapos-bumangga-sa-kotse-sa-nueva-ecija">Rider, patay matapos bumangga sa kotse sa Nueva Ecija</a></li>
-        <li><a href="https://ground.news/article/explosion-reported-at-small-gas-refilling-station-in-nueva-ecija">Explosion reported at small gas refilling station in Nueva Ecija</a></li>
-        <li><a href="https://www.gmanetwork.com/news/topstories/regions/888552/bus-shooting-in-nueva-ecija-may-be-due-to-personal-reasons-says-pnp/story/">Nueva Ecija bus shooting may be due to personal reasons -police</a></li>
-    </ul>
-    <br />
-    <a href="index.html">Back</a>
+
+    
+    <div class="new">
+        <h2>Daily News in Nueva Ecija</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="img/rider.jpg" alt="">
+                <div class="card-content">
+                    <h3>Rider, patay matapos bumangga sa kotse sa Nueva Ecija</h3>
+                    <p>Hindi na umabot nang buhay sa ospital ang isang rider matapos bumangga ang minamaneho niyang motorsiklo sa isang kotse sa Zaragoza, Nueva Ecija.</p>
+                    <a href="https://www.gmanetwork.com/news/balitambayan/promdi/889135/rider-patay-matapos-bumangga-sa-kotse-sa-nueva-ecija/story/" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/explosion.jpg" alt="">
+                <div class="card-content">
+                    <h3>Explosion reported at small gas refilling station in Nueva Ecija</h3>
+                    <p>An explosion was reported at a small gas refilling station in Bongabon, Nueva Ecija late Wednesday evening, according to a report on Super Radyo DZBB.</p>
+                    <a href="https://www.gmanetwork.com/news/topstories/regions/889967/explosion-reported-at-small-gas-refilling-station-in-nueva-ecija/story/" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/bus.jpg" alt="">
+                <div class="card-content">
+                    <h3>Nueva Ecija bus shooting may be due to personal reasons - police</h3>
+                    <p>The shooting of the two passengers onboard a passenger bus in Carranglan, Nueva Ecija may be due to personal reasons and not because of their businesses, police said Thursday. </p>
+                    <a href="https://www.gmanetwork.com/news/topstories/regions/888552/bus-shooting-in-nueva-ecija-may-be-due-to-personal-reasons-says-pnp/story/" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="aboutus">
+        <p>About Us</p>
+        <img src="img/PAITANlogo.png" alt="">
+        <div class="aboutuslist">
+            <ul>
+                <li>Paitan Norte is one of the Barangays of Cuyapo</li>
+                <li>Cuyapo is in the Province of Nueva Ecija</li>
+                <li>The Province of Nueva Ecija is in Region III - Ilocos Region and in the central island of Luzon</li>
+            </ul>
+        </div>
+    </div>
+    <div class="credits">
+        <div class="credittext">
+            <p>Paitan Norte, Cuyapo, Nueva Ecija</p>         
+            <p>All Rights Reserved</p>
+        </div>
+    </div>
 </body>
 </html>

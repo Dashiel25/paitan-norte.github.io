@@ -18,7 +18,7 @@
 }
 
 .container {
-    background-color: #fff;
+    background-color: #e4d7d7;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -73,8 +73,8 @@ button:hover {
             <label for="birthDate">Birth Date:</label>
             <input type="date" id="birthDate" name="birthDate" required>
 
-            <label for="proofOfIndigency">Proof of Indigency:</label>
-            <input type="file" id="proofOfIndigency" name="proofOfIndigency" accept=".pdf, .doc, .docx" required>
+            <label for="proofOfIndigency">Purpose:</label>
+            <input type="text" id="proofOfIndigency" name="proofOfIndigency" required>
 
             <button type="button" onclick="submitRequest()">Submit Request</button>
         </form>
@@ -93,11 +93,7 @@ button:hover {
 
     // For demonstration purposes, just display the entered information as a status message
     var requestStatus = `
-        <h3>Indigency Request Status</h3>
-        <p><strong>Full Name:</strong> ${fullName}</p>
-        <p><strong>Address:</strong> ${address}</p>
-        <p><strong>Birth Date:</strong> ${birthDate}</p>
-        <p><strong>Proof of Indigency:</strong> ${proofOfIndigency}</p>
+       
         <p>Your request has been submitted. Please wait for approval.</p>
     `;
 
